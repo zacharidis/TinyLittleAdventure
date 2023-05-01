@@ -12,6 +12,8 @@ namespace TinyLittleAdventure.Source.Text
         public English() {
 
             ChooseYourName = "Hello , what is your name ?";
+            DefaultName = "No Name Adventurer";
+            Welcome = "Welcome {0} to your Tiny Little Adventure";
         
 
         }

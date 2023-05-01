@@ -5,7 +5,10 @@ using TinyLittleAdventure.Source;
 using TinyLittleAdventure.Source.Characters;
 using TinyLittleAdventure.Source.Text;
 
-var language = new English();
+
+Text.LoadLanguage(new English());
+
+Console.WriteLine(Text.Language.ChooseYourName);
 
 
 
@@ -13,11 +16,11 @@ var playersName = Console.ReadLine();
 
 if (playersName == String.Empty)
 {
-    playersName = "No Name";
+    playersName = Text.Language.DefaultName;
 }
 
 var player = new Player(playersName);
 
 
-Console.WriteLine($"Welcome {player.Name}");
+Console.WriteLine(Text.Language.Welcome , player.Name);
 
