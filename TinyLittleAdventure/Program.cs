@@ -3,6 +3,7 @@
 
 using TinyLittleAdventure.Source;
 using TinyLittleAdventure.Source.Characters;
+using TinyLittleAdventure.Source.Map;
 using TinyLittleAdventure.Source.Text;
 
 
@@ -23,4 +24,6 @@ var player = new Player(playersName);
 
 
 Console.WriteLine(Text.Language.Welcome , player.Name);
+
+var house = new House(player);
 
