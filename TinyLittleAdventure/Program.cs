@@ -1,10 +1,13 @@
 ﻿//Tiny little adventure 
 //By Georgios Zacharidis 
 
-using TinyLittleAdventure.Source; 
+using TinyLittleAdventure.Source;
+using TinyLittleAdventure.Source.Characters;
+using TinyLittleAdventure.Source.Text;
 
-Console.WriteLine("Hello there , are you ready for an adventure ?");
-Console.WriteLine("Enter your name and hit enter");
+var language = new English();
+
+
 
 var playersName = Console.ReadLine();
 
