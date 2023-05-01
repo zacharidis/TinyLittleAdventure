@@ -1,4 +1,7 @@
-﻿Console.WriteLine("Hello there , are you ready for an adventure ?");
+﻿//Tiny little adventure 
+//By Georgios Zacharidis 
+
+Console.WriteLine("Hello there , are you ready for an adventure ?");
 Console.WriteLine("Enter your name and hit enter");
 
 var playersName = Console.ReadLine();
