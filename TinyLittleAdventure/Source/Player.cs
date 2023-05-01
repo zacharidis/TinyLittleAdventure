@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TinyLittleAdventure.Source
 {
-    internal class Player
+    public class Player : Character
     {
+       public Player(string name) :base(name) 
+        {
+
+
+        }
+
     }
 }
