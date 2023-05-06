@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TinyLittleAdventure.Source.Characters;
 
-namespace TinyLittleAdventure.Source.Map
+namespace TinyLittleAdventure
 {
    public partial class House
     {

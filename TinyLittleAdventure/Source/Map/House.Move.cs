@@ -2,8 +2,17 @@
 
 public partial class House
 {
+    public Room CurrentRoom { get; set; }   
+
+
     public void GoToRoom(int index)
     {
+
+        if (CurrentRoom != null)
+        {
+            CurrentRoom.isVisited = true;
+            CurrentRoom = Rooms[index];
+        }
 
     }
 
@@ -11,7 +20,7 @@ public partial class House
     
     { 
         
-
+        GoToRoom(_rnd.Next(0, Rooms.Length));
     }
 
 
